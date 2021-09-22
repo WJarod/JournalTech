@@ -1,0 +1,304 @@
+/* color
+#126384
+#D3D3D3
+#828584 
+*/
+@font-face {
+    font-family: 'Nehad';
+    src: url(font/Nehad.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+body{
+    min-height: 100vh;
+    background-image: url(./image/bg_body.jpg);
+    background-size: cover;
+}
+/* Début header */
+header{
+
+    background-color: #D3D3D3;
+    height: 200px;
+}
+/* Début NavBAR */
+.gray{
+    background-color: #828584;
+}
+.blue{
+    background-color: #126384;
+}
+.nav-link{
+    text-align: center;
+    width: 120px;
+    color: white;
+}
+
+nav{
+    margin-top: 12px;
+}
+
+.gauche{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.droite{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.dropdown-item{
+    width: 100%;
+}
+
+.nav-link:hover{
+    color: #4DE0EA;
+}
+
+.logoheader{
+    margin-top: 12px;
+    width: 80px;
+    height: auto;
+}
+
+/* Fin NavBAR */
+
+/* Début Titre */
+
+h1{
+    font-size: 65px;
+    margin-left: -50px;
+    font-family: 'Nehad';
+    margin-top: -10px;
+}
+
+.titreg{
+    color: #828584;
+}
+
+.titred{
+    color: #126384;
+}
+
+/* Fin Titre */
+/* Fin header*/
+
+
+/* Début btn-submit Form*/
+.button_Submit{
+    border: 5px .828584 solid;
+    background-color: #828584;
+    border-radius: 5px;
+    color: white;
+    height: 40px;
+    margin-top: 22px;
+}
+.button_Submit:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button_DelUpd{
+    border: 5px #126384 solid;
+    background-color: #126384;
+    border-radius: 5px;
+    color: white;
+    height: 40px;
+    margin-top: 13px;
+}
+.button_DelUpd:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* Fin btn-submit Form*/
+
+
+/* Début Article */
+.article_base{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 240px;
+    border: 10px solid #d3d3d381;
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+    border-radius:  20px;
+    background-color: #D3D3D3;
+}
+
+.article_img{
+    height: 220px;
+    border-radius:  10px 0px 0px 10px;
+    background-color: #126384;
+}
+
+.img-responsive{
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.article_descri{
+    height: 120px;
+}
+
+.carousel{
+    height:315px;
+}
+
+.carousel-inner{
+    height:315px;
+}
+/* Début Article */
+
+
+/* Début footer*/
+
+footer{
+    height: 150px;
+    background-color: #126384;
+    color: white;
+}
+
+.stickyFooter{
+    position: sticky;
+    top: 100%;
+}
+
+.logofooter{
+    width: 40px;
+    height: auto;
+}
+.footer{
+    margin-top: 4.5%;
+    margin-left: 9.5%;
+}
+
+.divlogo{
+    margin-top: -7px;
+}
+.divtitre{
+    margin-left: -130px;
+}
+.footerMi{
+    margin-left: 10%;
+}
+
+/* Fin footer*/
+
+ 
+/* Début form */
+.addArticle{
+    background-color: #126384;
+    border: 30px solid #126384;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.check{
+    margin-top: 35px;
+    margin-left: 92px;
+}
+/* FIN form */
+
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 80px;
+    width: 80px;
+    outline: #828584;
+    border-radius: 20px;
+    background-color: #126384;
+    background-size: 100%, 100%;
+    border: 4px solid #828584;
+}
+
+
+
+/* PopUP */
+
+.contenus{
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 20%;
+    left: 33%;
+    background: #D3D3D3;
+    width: 500px;
+    max-height: 1000px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 25px 25px 30px 25px;
+    border: solid 5px #126384;
+    color: #126384;
+    font-size: 20px;
+    box-shadow: black 0px 0px 20px 5px;
+}
+
+.contenus .formStyle{
+    margin-top: 20px;
+}
+.contenus .test{
+    line-height: 100px;
+}
+.inputStyle{
+    border-radius: 10px;
+    border: solid 5px #126384;
+    background-color: #D3D3D3;
+    color: #126384;
+}
+.contenus.montrer{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.7s ease;
+}
+.contenus.cacher{
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.7s ease;
+}
+
+/* Fin PopUP */
+
+/*Début Style formulaire réservation*/
+.formReservatoin{
+    height: 655px;
+    margin-top: 40px;
+}
+
+.formulaire .formStyle{
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.formulaire button{
+    margin-top: 40px;
+    border: solid 5px #126384;
+    background-color: #D3D3D3;
+    border-radius: 10px;
+    color: #126384;
+}
+
+.formulaire label{
+    margin-left: 10px;
+}
+.formulaire input{
+    height: 40px;
+    border: solid 5px #126384;
+    background-color: #D3D3D3;
+    border-radius: 10px;
+    color: #126384;
+}
+/**/
+
+.mod{
+    color: #126384;
+    font-size: 15px;
+}
+
+
